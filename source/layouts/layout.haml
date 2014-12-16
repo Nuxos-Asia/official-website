@@ -33,7 +33,7 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand.page-scroll{:href => "#page-top"}
-            Nuxos Asia
+            = image_tag "logos/brand-invert.png"
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
@@ -54,7 +54,9 @@
       .container
         .row
           .col-md-4
+            %a.navbar-brand.page-scroll{:href => "#page-top"}
+              = image_tag "logos/brand.png"
+          .col-md-4
+          .col-md-4
             %span.copyright Copyright &copy; Nuxos Asia 2014
-          .col-md-4
-          .col-md-4
     = javascript_include_tag "cbpAnimatedHeader"
