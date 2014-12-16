@@ -77,3 +77,20 @@ end
 configure :development do
   activate :livereload
 end
+
+
+helpers do
+  def col_for_collection(collection)
+    case  collection.size
+      when 4
+        3
+      when 3
+        4
+      when 2
+        6
+      when 3
+        12
+    end
+    # ...do something here...
+  end
+end

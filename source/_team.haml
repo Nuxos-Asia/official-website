@@ -6,10 +6,10 @@
         %h2.section-heading Our Amazing Team
         %h3.section-subheading.text-muted People who made all this possible
 
-    - data.people.team.each_slice(3) do |slice|
+    - data.people.team.each_slice(4) do |slice|
       .row
         - slice.each do |person|
-          .col-sm-4
+          = content_tag :div, class: "col-md-#{col_for_collection(slice)}" do
             .team-member
               = image_tag person.photo, class: "img-circle img-responsive"
               %h4= person[:name]
