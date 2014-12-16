@@ -1,0 +1,38 @@
+team:
+  - name: Richard
+    position: CTO & Rails Developer
+    photo: team/richard.jpg
+
+  - name: Earth
+    position: Rails Developer
+    photo: team/earth.jpg
+
+  - name: Korn
+    position: IT Marketing
+    photo: team/korn.jpg
+
+  - name: M
+    position: iOS Developer
+    photo: team/m.jpg
+
+  - name: Por
+    position: Rails Developer
+    photo: team/por.jpg
+
+  - name: Priao
+    position: Project Coordinator
+    photo: team/priao.jpg
+
+  - name: Safe
+    position: Rails Developer
+    photo: team/safe.jpg
+
+  - name: Thak
+    position: Rails Developer
+    photo: team/thak.jpg
+
+  - name: You
+    position: Join Now
+    photo: team/unknow.png
+    link_url: '/join_us'
+

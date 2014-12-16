@@ -1,0 +1,20 @@
+/ Team Section
+%section#team
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Our Amazing Team
+        %h3.section-subheading.text-muted People who made all this possible
+
+    - data.people.team.each_slice(3) do |slice|
+      .row
+        - slice.each do |person|
+          .col-sm-4
+            .team-member
+              = image_tag person.photo, class: "img-circle img-responsive"
+              %h4= person[:name]
+              %p.text-muted= person[:position]
+
+    -#.row
+    -#  .col-lg-8.col-lg-offset-2.text-center
+    -#    %p.large.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
