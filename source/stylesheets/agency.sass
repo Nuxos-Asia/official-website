@@ -18,7 +18,7 @@ $primary-color: #2865a4
 $border-color: #297bbd
 $on-active-color: #2984c7
 $light-blue: #58CFFF
-$navbar-bg: #222
+$navbar-bg: rgba(42, 103, 166, 0.58)
 
 body
   overflow-x: hidden
@@ -208,8 +208,8 @@ fieldset[disabled] .btn-xl.active
   background-color: $white
 
 .navbar-default
-  //border-color: transparent
-  background-color: $navbar-bg
+  border-color: transparent
+  background-color: $dark-gray
   .navbar-brand
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
     padding: 10px 15px
@@ -258,8 +258,8 @@ fieldset[disabled] .btn-xl.active
     .navbar-nav > .active > a
       border-radius: 3px
     &.navbar-shrink
-      padding: 10px 0
       background-color: $navbar-bg
+      padding: 10px 0
       .navbar-brand
         font-size: 1.5em
 
@@ -322,6 +322,7 @@ section
     font-size: 16px
     font-style: italic
     font-weight: 400
+    color: $white
 
 @media (min-width: 768px)
   section
