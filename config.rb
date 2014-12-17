@@ -91,6 +91,5 @@ helpers do
       when 3
         12
     end
-    # ...do something here...
   end
 end
