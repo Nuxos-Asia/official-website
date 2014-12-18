@@ -11,9 +11,16 @@
         - slice.each do |person|
           = content_tag :div, class: "col-md-#{col_for_collection(slice)}" do
             .team-member
-              = image_tag person.photo, class: "img-circle img-responsive"
-              %h4= person[:name]
-              %p.text-muted= person[:position]
+              - if person[:name] == 'You'
+                %h4.you= person[:name]
+                = image_tag person.photo, class: "img-circle img-responsive"
+                %h4
+                  = link_to person[:title], person[:link_url]
+                %p.text-muted= person[:caption]
+              - else
+                = image_tag person.photo, class: "img-circle img-responsive"
+                %h4= person[:name]
+                %p.text-muted= person[:position]
 
     -#.row
     -#  .col-lg-8.col-lg-offset-2.text-center

@@ -32,7 +32,8 @@ team:
     photo: team/thak.jpg
 
   - name: You
-    position: Join Now
+    title: Join Us
+    caption: View avaiable positions and apply!
     photo: team/unknow.png
     link_url: '/join_us'
 
