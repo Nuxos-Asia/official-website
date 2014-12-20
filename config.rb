@@ -28,7 +28,7 @@ end
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-page "/login.html", :layout => "test"
+page "/jobs.html", :layout => "jobs_layout"
 
 
 ###
@@ -50,13 +50,28 @@ page "/login.html", :layout => "test"
 #   end
 # end
 
-set :css_dir, 'stylesheets'
+helpers do
+  def col_for_collection(collection)
+    case  collection.size
+      when 4
+        3
+      when 3
+        4
+      when 2
+        6
+      when 3
+        12
+    end
+  end
+end
 
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
 
 # Build-specific configuration
+
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
+
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -78,18 +93,4 @@ configure :development do
   activate :livereload
 end
 
-
-helpers do
-  def col_for_collection(collection)
-    case  collection.size
-      when 4
-        3
-      when 3
-        4
-      when 2
-        6
-      when 3
-        12
-    end
-  end
-end
+activate :directory_indexes

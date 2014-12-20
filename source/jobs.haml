@@ -1,0 +1,37 @@
+%section#job-intro
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading
+          %strong JOIN US
+        %h3.section-subheading.text-muted Become part of our team
+
+
+%section#job-details
+  .container
+    -#.row
+    -#  .col-sm-12
+    -#    %header.hero-feature
+    -#      .intro-text
+    -#        .intro-heading Join Our Team
+
+    .row
+      .col-sm-8
+        = partial "jobs_description"
+
+      .col-sm-4
+        .sidebar
+          %h3
+            %strong PASSION
+            is everything
+
+          .spacer
+          %p
+            Our team seeking people who has passion in software development & design and also problem solver.
+          %p
+            If you think you are person that we looking for. Then, let's talk!
+
+          .spacer
+          %a.btn.btn-primary{:href => "mailto: #{data.site.job_email}"}
+            = "Submit Your Resume "
+            %i.fa.fa-file-text-o

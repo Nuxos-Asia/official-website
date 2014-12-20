@@ -1,3 +1,55 @@
 @import "bootstrap"
 @import "font-awesome"
-@import "agency"
+
+$white: #fff
+$light-gray: #f7f7f7
+$gray: #777
+$dark-gray: #333
+$input-error: #e74c3c
+
+// Nuxos style
+$primary-color: #2865a4
+$border-color: #297bbd
+$on-active-color: #2984c7
+$light-blue: #58CFFF
+
+body
+  overflow-x: hidden
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.text-muted
+  color: $gray
+
+.text-primary
+  color: $primary-color
+
+.bg-light-gray
+  background-color: $light-gray
+
+.bg-darkest-gray
+  background-color: $dark-gray
+
+p
+  font-size: 14px
+  line-height: 1.75
+  &.large
+    font-size: 16px
+
+a
+  outline: 0
+  &:hover, &:focus, &:active, &.active
+    outline: 0
+  color: $primary-color
+  &:hover, &:focus, &:active, &.active
+    color: $on-active-color
+
+footer
+  padding: 25px 0
+
+  span.copyright
+    text-transform: uppercase
+    text-transform: none
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    line-height: 40px
+    text-align: right
+    padding: 15px

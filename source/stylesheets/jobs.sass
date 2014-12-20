@@ -1,0 +1,111 @@
+$white: #fff
+$light-gray: #f7f7f7
+$gray: #777
+$dark-gray: #333
+$input-error: #e74c3c
+$trans-gray-bg: rgba(255,255,255,.8)
+
+// Nuxos style
+$primary-color: #2865a4
+$border-color: #297bbd
+$on-active-color: #2984c7
+$light-blue: #58CFFF
+
+body
+  padding-top: 50px
+
+@media (min-width: 768px)
+  body
+    padding-top: 70px
+
+.sidebar
+  background-color: $trans-gray-bg
+  padding: 20px
+  -webkit-border-radius: 20px
+  -moz-border-radius: 20px
+  border-radius: 20px
+
+  h3
+    margin: 0px
+
+.spacer
+  margin-top: 20px
+
+.panel-default
+  background-color: transparent
+  border: none
+
+  .panel-body
+    background-color: $white
+
+  .panel-heading
+    cursor: pointer
+    background-color: $white
+
+    &:hover
+      background-color: $trans-gray-bg
+
+.bg-light-gray
+  background-color: $light-gray
+
+.bg-darkest-gray
+  background-color: $dark-gray
+
+.jumbotron h1
+  color: $white
+
+@media (min-width: 768px)
+  .navbar-default
+    padding: 10px 0
+
+.navbar-default
+  border-color: transparent
+  background-color: $dark-gray
+
+  .navbar-brand
+    padding: 10px 15px
+
+  .nav li a
+    text-transform: uppercase
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 400
+    letter-spacing: 1px
+    color: $white
+
+    &:hover, &:focus
+      outline: 0
+      color: $light-blue
+
+
+header
+  color: $dark-gray
+
+  .intro-heading
+    padding: 20px 0
+    text-transform: uppercase
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 50px
+    font-weight: 200
+    line-height: 50px
+
+section#job-details
+  //background-attachment: scroll
+  background-image: image-url("job-header-bg2.jpg")
+  background-position: center center
+  background-repeat: none
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  //background-size: cover
+  -o-background-size: cover
+  height: 700px
+
+section
+  padding: 50px 0
+
+  h2.section-heading
+    font-size: 40px
+  h3.section-subheading
+    text-transform: none
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-style: italic
+    font-size: 14pt

@@ -7,10 +7,10 @@
 
     %title Nuxos Asia - Welcome To Our Office
 
-    = javascript_include_tag  "all"
+    = javascript_include_tag  "all", "jobs"
     = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
 
-    = stylesheet_link_tag "all", "home"
+    = stylesheet_link_tag "all", "jobs"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Montserrat:400,700"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Kaushan+Script"
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
@@ -33,23 +33,23 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand.page-scroll{:href => "#page-top"}
+          %a.navbar-brand.page-scroll{href:  '/'}
             = image_tag "logos/brand-invert.png"
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li.hidden
-              %a{:href => "#page-top"}
+              %a{href:  "#page-top"}
             %li
-              %a.page-scroll{:href => "#services"} Services
+              %a.page-scroll{href:  "/#services"} Services
             %li
-              %a.page-scroll{:href => "#portfolio"} Portfolio
+              %a.page-scroll{href:  "/#portfolio"} Portfolio
             %li
-              %a.page-scroll{:href => "#team"} Team
+              %a.page-scroll{href:  "/#team"} Team
             %li
-              %a.page-scroll{:href => "#contact"} Contact
+              %a.page-scroll{href:  "/#contact"} Contact
             %li
-              = link_to 'Join us', '/jobs.html', class: "page-scroll"
+              %a.page-scroll{href:  "#"} Join us
 
     = yield
 
@@ -57,7 +57,7 @@
       .container
         .row
           .col-md-4
-            %a.navbar-brand.page-scroll{:href => "#page-top"}
+            %a.navbar-brand.page-scroll{href:  "#page-top"}
               = image_tag "logos/brand.png"
           .col-md-4
           .col-md-4

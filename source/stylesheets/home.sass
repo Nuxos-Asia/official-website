@@ -10,7 +10,7 @@
 $white: #fff
 $light-gray: #f7f7f7
 $gray: #777
-$dark-gray: #222
+$dark-gray: #333
 $input-error: #e74c3c
 
 // Nuxos style
@@ -18,45 +18,14 @@ $primary-color: #2865a4
 $border-color: #297bbd
 $on-active-color: #2984c7
 $light-blue: #58CFFF
-$navbar-bg: rgba(42, 103, 166, 0.58)
 
-body
-  overflow-x: hidden
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
-
-.text-muted
-  color: $gray
-
-.text-primary
-  color: $primary-color
-
-p
-  font-size: 14px
-  line-height: 1.75
-  &.large
-    font-size: 16px
-
-a
-  outline: 0
-  &:hover, &:focus, &:active, &.active
-    outline: 0
-  color: $primary-color
-  &:hover, &:focus, &:active, &.active
-    color: $on-active-color
+.img-centered
+  margin: 0 auto
 
 h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight: 700
-
-.img-centered
-  margin: 0 auto
-
-.bg-light-gray
-  background-color: $light-gray
-
-.bg-darkest-gray
-  background-color: $dark-gray
 
 .btn-primary
   border-color: $primary-color
@@ -258,7 +227,7 @@ fieldset[disabled] .btn-xl.active
     .navbar-nav > .active > a
       border-radius: 3px
     &.navbar-shrink
-      background-color: $navbar-bg
+      background-color: $dark-gray
       padding: 10px 0
       .navbar-brand
         font-size: 1.5em
@@ -322,7 +291,7 @@ section
     font-size: 16px
     font-style: italic
     font-weight: 400
-    color: $white
+
 
 @media (min-width: 768px)
   section
@@ -552,6 +521,9 @@ section#contact
   background-position: center
   background-repeat: no-repeat
 
+  h3.section-subheading
+    color: $white
+
   button
     background: transparent
     border: 2px solid $white
@@ -581,21 +553,6 @@ section#contact
     color: #bbb
   .text-danger
     color: $input-error
-
-footer
-  padding: 25px 0
-  text-align: center
-  span.copyright
-    text-transform: uppercase
-    text-transform: none
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
-    line-height: 40px
-  ul.quicklinks
-    margin-bottom: 0
-    text-transform: uppercase
-    text-transform: none
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
-    line-height: 40px
 
 ul.social-buttons
   margin-bottom: 0
