@@ -41,9 +41,12 @@ body
   .panel-heading
     cursor: pointer
     background-color: $white
-
     &:hover
       background-color: $trans-gray-bg
+
+  .panel-title > a
+    color: $dark-gray
+    text-decoration: none
 
 .bg-light-gray
   background-color: $light-gray
@@ -97,7 +100,7 @@ section#job-details
   -moz-background-size: cover
   //background-size: cover
   -o-background-size: cover
-  height: 700px
+  min-height: 700px
 
 section
   padding: 50px 0
