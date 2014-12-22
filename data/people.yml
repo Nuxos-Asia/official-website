@@ -33,7 +33,7 @@ team:
 
   - name: You
     title: Join Us
-    caption: View avaiable positions and apply!
+    caption: Become part of our team
     photo: team/unknow.png
     link_url: '/jobs'
 
