@@ -3,8 +3,5 @@ job_email: jobs@nuxos.asia
 
 meta:
   title: " Nuxos Asia - Welcome To Our Office"
-  image:
-    - "nuxos_fb_logo.png"
-    - "images/logos"
   site_name: www.nuxos.asia
   description: Fun to code. Beautiful design. Easy to use.
