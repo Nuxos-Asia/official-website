@@ -5,7 +5,20 @@
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{content: "width=device-width", name: "viewport", "initial-scale" => 1}
 
-    %title Nuxos Asia - Welcome To Our Office
+    %title= data.site.meta[:title]
+
+    %link{ rel: "apple-touch-icon", sizes: "152x152", href: asset_url("apple-touch-icon-152x152-precomposed.png", "images") }
+    %link{ rel: "apple-touch-icon", sizes: "144x144", href: asset_url("apple-touch-icon-144x144-precomposed.png" , "images") }
+    %link{ rel: "apple-touch-icon", sizes: "114x114", href: asset_url("apple-touch-icon-114x114-precomposed.png" , "images") }
+    %link{ rel: "apple-touch-icon", sizes: "72x72", href: asset_url("apple-touch-icon-72x72-precomposed.png" , "images") }
+    %link{ rel: "apple-touch-icon", href: asset_url("apple-touch-icon-precomposed.png" , "images") }
+    %link{ rel: "shortcut icon", href: asset_url("favicon.png" , "images") }
+    %link{ rel: "icon", type: "image/ico", href: asset_url("favicon.ico", "images") }
+
+    %meta{property: "og:title", content: data.site.meta[:title] }
+    %meta{property: "og:image", content: asset_url(data.site.meta[:image]) }
+    %meta{property: "og:site_name", content: data.site.meta[:site_name] }
+    %meta{property: "og:description", content: data.site.meta[:description] }
 
     = javascript_include_tag  "all", "jobs"
     = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"

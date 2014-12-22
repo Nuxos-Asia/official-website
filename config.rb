@@ -52,7 +52,7 @@ page "/jobs.html", :layout => "jobs_layout"
 
 helpers do
   def col_for_collection(collection)
-    case  collection.size
+    case collection.size
       when 4
         3
       when 3
@@ -87,6 +87,23 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # create favicon
+  activate :favicon_maker do |f|
+    f.template_dir  = File.join(root, 'source/images')
+    f.output_dir    = File.join(root, 'build/images')
+    f.icons = {
+        "_favicon_template.png" => [
+            { icon: "apple-touch-icon-152x152-precomposed.png" },
+            { icon: "apple-touch-icon-144x144-precomposed.png" },
+            { icon: "apple-touch-icon-114x114-precomposed.png" },
+            { icon: "apple-touch-icon-72x72-precomposed.png" },
+            { icon: "apple-touch-icon-precomposed.png", size: "57x57" },
+            { icon: "favicon.png", size: "16x16" },
+            { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
+        ]
+    }
+  end
 end
 
 configure :development do

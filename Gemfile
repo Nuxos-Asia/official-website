@@ -16,4 +16,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'bootstrap-sass', require: false
 gem 'middleman-jquery'
 gem 'font-awesome-sass'
-
+gem "middleman-favicon-maker", "~> 3.7"
