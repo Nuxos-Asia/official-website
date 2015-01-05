@@ -1,11 +1,12 @@
 %section#contact
   .container
     .row
-      .col-lg-12.text-center
+      .col-lg-6
         %h2.section-heading Contact Us
-        %h3.section-subheading.text-muted Let's get in touch. We are kindly to hear what you think.
-    .row
-      .col-lg-12
+        %h3.section-subheading Let's get in touch. We are kindly to hear what you think.
+      .col-lg-6.text-center
+        %a.btn.btn-xl{href: "mailto:#{data.site.contact_email}"} Send Message
+      -#.col-lg-12
         %form#contactForm{:name => "sentMessage", :novalidate => ""}
           .row
             .col-md-6
