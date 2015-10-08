@@ -1,29 +1,33 @@
 %section#contact
   .container
     .row
-      .col-lg-6
+      .col-md-12.text-center
         %h2.section-heading Contact Us
-        %h3.section-subheading Let's get in touch. We are kindly to hear what you think.
-      .col-lg-6.text-center
-        %a.btn.btn-xl{href: "mailto:#{data.site.contact_email}"} Send Message
-      -#.col-lg-12
-        %form#contactForm{:name => "sentMessage", :novalidate => ""}
-          .row
-            .col-md-6
-              .form-group
-                %input#name.form-control{"data-validation-required-message" => "Please enter your name.", :placeholder => "Your Name *", :required => "", :type => "text"}
-                  %p.help-block.text-danger
-              .form-group
-                %input#email.form-control{"data-validation-required-message" => "Please enter your email address.", :placeholder => "Your Email *", :required => "", :type => "email"}
-                  %p.help-block.text-danger
-              .form-group
-                %input#phone.form-control{"data-validation-required-message" => "Please enter your phone number.", :placeholder => "Your Phone *", :required => "", :type => "tel"}
-                  %p.help-block.text-danger
-            .col-md-6
-              .form-group
-                %textarea#message.form-control{"data-validation-required-message" => "Please enter a message.", :placeholder => "Your Message *", :required => ""}
-                %p.help-block.text-danger
-            .clearfix
-            .col-lg-12.text-center
-              #success
-              %button.btn.btn-xl{:type => "submit"} Send Message
+        %h3.section-subheading Let's get in touch. We are kindly to hear what you think.    
+
+      .col-md-8
+        .map
+          #map-canvas.map-canvas{'data-latitude' => '13.7217297', 'data-longitude' => '100.5254564', 'data-zoom' => '15'}
+
+      .col-md-4
+        %address
+          %strong Nuxos Asia
+          %br
+          142/10 Sathorn Naue Road.
+          %br
+          Soi. Suksawittaya (Sathorn 12)
+          %br
+          Silom, Bangrak, Bangkok
+          %br
+          10500
+          %br
+          %abbr{title: 'Phone'} P:
+          085 9040 939
+          %br
+          %abbr{title: 'Email'} E:
+          info.nuxos.asia
+          %br
+          %br
+          %a.btn.btn-xl{href: "mailto:#{data.site.contact_email}"} Send Message
+
+    .clearfix
