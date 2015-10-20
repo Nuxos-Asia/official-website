@@ -1,68 +1,73 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => 'en'}
   %head
-    %meta{charset: "utf-8"}
-    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
-    %meta{content: "width=device-width", name: "viewport", "initial-scale" => 1}
+    %meta{charset: 'utf-8'}
+    %meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{content: 'width=device-width', name: 'viewport', 'initial-scale' => 1}
 
     %title= data.site.meta[:title]
 
-    %link{ rel: "apple-touch-icon", sizes: "152x152", href: asset_url("apple-touch-icon-152x152-precomposed.png", "images") }
-    %link{ rel: "apple-touch-icon", sizes: "144x144", href: asset_url("apple-touch-icon-144x144-precomposed.png" , "images") }
-    %link{ rel: "apple-touch-icon", sizes: "114x114", href: asset_url("apple-touch-icon-114x114-precomposed.png" , "images") }
-    %link{ rel: "apple-touch-icon", sizes: "72x72", href: asset_url("apple-touch-icon-72x72-precomposed.png" , "images") }
-    %link{ rel: "apple-touch-icon", href: asset_url("apple-touch-icon-precomposed.png" , "images") }
-    %link{ rel: "shortcut icon", href: asset_url("favicon.png" , "images") }
-    %link{ rel: "icon", type: "image/ico", href: asset_url("favicon.ico", "images") }
+    %link{ rel: 'apple-touch-icon', sizes: '152x152', href: asset_url('apple-touch-icon-152x152-precomposed.png', 'images') }
+    %link{ rel: 'apple-touch-icon', sizes: '144x144', href: asset_url('apple-touch-icon-144x144-precomposed.png' , 'images') }
+    %link{ rel: 'apple-touch-icon', sizes: '114x114', href: asset_url('apple-touch-icon-114x114-precomposed.png' , 'images') }
+    %link{ rel: 'apple-touch-icon', sizes: '72x72', href: asset_url('apple-touch-icon-72x72-precomposed.png' , 'images') }
+    %link{ rel: 'apple-touch-icon', href: asset_url('apple-touch-icon-precomposed.png' , 'images') }
+    %link{ rel: 'shortcut icon', href: asset_url('favicon.png' , 'images') }
+    %link{ rel: 'icon', type: 'image/ico', href: asset_url('favicon.ico', 'images') }
 
-    %meta{property: "og:title", content: data.site.meta[:title] }
-    %meta{property: "og:image", content: asset_url("nuxos_fb_logo.png", "images/logos") }
-    %meta{property: "og:site_name", content: data.site.meta[:site_name] }
-    %meta{property: "og:description", content: data.site.meta[:description] }
+    %meta{property: 'og:title', content: data.site.meta[:title] }
+    %meta{property: 'og:image', content: asset_url('nuxos_fb_logo.png', 'images/logos') }
+    %meta{property: 'og:site_name', content: data.site.meta[:site_name] }
+    %meta{property: 'og:description', content: data.site.meta[:description] }
 
-    = javascript_include_tag  "all", "jobs"
-    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+    = javascript_include_tag  'all', 'jobs'
+    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'
 
-    = stylesheet_link_tag "all", "jobs"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Montserrat:400,700"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Kaushan+Script"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+    = stylesheet_link_tag 'all', 'jobs'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Montserrat:400,700'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Kaushan+Script'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'
 
     / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     / WARNING: Respond.js doesn't work if you view the page via file://
     / [if lt IE 9]
-    %script{src: "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
-    %script{src: "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+    %script{src: 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'}
+    %script{src: 'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'}
 
   %body#page-top.index
-    / Navigation
+    / Navigatio
     %nav.navbar.navbar-default.navbar-fixed-top
       .container
         / Brand and toggle get grouped for better mobile display
         .navbar-header.page-scroll
-          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type:  "button"}
+          %button.navbar-toggle{'data-target': '#bs-example-navbar-collapse-1', 'data-toggle': 'collapse', type: 'button'}
             %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand.page-scroll{href:  '/'}
-            = image_tag "logos/brand-invert.png"
+          = link_to image_tag('logos/brand-invert.png'), 'index.html', class: 'navbar-brand page-scroll'
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li.hidden
-              %a{href:  "#page-top"}
+              %a{href: '#page-top'}
+            %li
+              = link_to t('menu.about_us'), 'index.html#about', class: 'page-scroll'
             -#%li
-            -#  %a.page-scroll{href:  "/#services"} Services
+            -#  %a.page-scroll{href: '/#services'} Services
             -#%li
-            -#  %a.page-scroll{href:  "/#portfolio"} Portfolio
+            -#  %a.page-scroll{href: '/#portfolio'} Portfolio
             %li
-              %a.page-scroll{href:  "/#team"} Team
+              = link_to t('menu.team'), 'index.html#team', class: 'page-scroll'
             %li
-              %a.page-scroll{href:  "/#contact"} Contact
+              = link_to t('menu.contact'), 'index.html#contact', class: 'page-scroll'
             %li
-              %a.page-scroll{href:  "#"} Join us
+              %a.page-scroll{href: '#'}= t('menu.join_us')
+            %li
+              %a.page-scroll{href: '/jobs.html'}= image_tag('flag/us.png')
+            %li
+              %a.page-scroll{href: '/th/jobs.html'}= image_tag('flag/th.png')
 
     = yield
 
@@ -70,9 +75,9 @@
       .container
         .row
           .col-md-4
-            %a.navbar-brand.page-scroll{href:  "#page-top"}
-              = image_tag "logos/brand.png"
+            %a.navbar-brand.page-scroll{href:  '#page-top'}
+              = image_tag 'logos/brand.png'
           .col-md-4
           .col-md-4
             %span.copyright &copy; Nuxos Asia 2014
-    = javascript_include_tag "cbpAnimatedHeader"
+    = javascript_include_tag 'cbpAnimatedHeader'

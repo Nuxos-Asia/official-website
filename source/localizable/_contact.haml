@@ -1,0 +1,16 @@
+%section#contact
+  .container
+    .row
+      .col-md-12.text-center
+        %h2.section-heading= t('sections.contact.title')
+        %h3.section-subheading= t('sections.contact.sub_title')
+
+      .col-md-8
+        .map
+          #map-canvas.map-canvas{'data-latitude' => '13.7217297', 'data-longitude' => '100.5254564', 'data-zoom' => '15'}
+
+      .col-md-4
+        %address= t('sections.contact.address')
+        %a.btn.btn-xl{href: "mailto:#{data.site.contact_email}"} Send Message
+
+    .clearfix

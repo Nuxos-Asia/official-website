@@ -1,0 +1,41 @@
+en:
+  menu:
+    about_us: About us
+    team: Team
+    contact: Contact
+    join_us: Join us
+  sections:
+    about:
+      title: About Nuxos
+      goal:
+        title: Our Goal
+        content: Create stunning Ruby on Rails and mobile applications and release them to the world!
+      strategy:
+        title: Our Strategy
+        content: Work smarter not harder!
+      ambition:
+        title: Our Ambitions
+        content: Create more and more great applications every year and work happily ever after.
+      fact:
+        title: Facts about Nuxos
+        content: We are an SME company, and we love to work in a relaxing environment. Trust, reliability, and responsibility are our teamwork keys.
+    team:
+      title: Our Amazing Team
+      sub_title: People who made all this possible
+    contact:
+      title: Contact Us
+      sub_title: Any questions, please do not hesitate to contact us!
+      address: >
+                 <strong>Nuxos Consulting Co., Ltd.</strong><br>
+                 142/10 Soi Suksawitthaya <br>
+                 Sathorn Nue Road, Silom, <br>
+                 Bangrak, Bangkok, <br>
+                 Thailand 10500 <br>
+                 <abbr title="Phone">Tel:</abbr> +6685 90 40 939 <br>
+                 <abbr title="Email">Email:</abbr> info@nuxos.asia <br><br>
+
+    job_page:
+      title: Join us
+      sub_title: Become part of our team
+
+

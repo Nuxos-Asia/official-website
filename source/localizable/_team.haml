@@ -3,13 +3,13 @@
   .container
     .row
       .col-lg-12.text-center
-        %h2.section-heading Our Amazing Team
-        %h3.section-subheading.text-muted People who made all this possible
+        %h2.section-heading= t('sections.team.title')
+        %h3.section-subheading.text-muted= t('sections.team.sub_title')
 
     - data.people.team.each_slice(4) do |slice|
       .row
         - slice.each do |person|
-          = content_tag :div, class: "col-md-#{col_for_collection(slice)}" do
+          = content_tag :div, class: "col-md-#{col_for_collection(slice)} col-xs-6" do
             .team-member
               - if person[:name] == 'You'
                 %h4.you= person[:name]

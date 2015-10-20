@@ -1,0 +1,43 @@
+/ About Section
+%section#about
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading About Nuxos
+        %h3.section-subheading.text-muted
+
+    .row
+      .col-lg-12
+        %ul.timeline
+          %li
+            .timeline-image
+              = image_tag 'about/1.jpg', class: 'img-circle img-responsive'
+            .timeline-panel
+              .timeline-heading
+                %h4= t('sections.about.goal.title')
+              .timeline-body
+                %p.text-muted= t('sections.about.goal.content')
+          %li.timeline-inverted
+            .timeline-image
+              = image_tag 'about/2.jpg', class: 'img-circle img-responsive'
+            .timeline-panel
+              .timeline-heading
+                %h4= t('sections.about.strategy.title')
+              .timeline-body
+                %p.text-muted= t('sections.about.strategy.content')
+          %li
+            .timeline-image
+              = image_tag 'about/3.jpg', class: 'img-circle img-responsive'
+            .timeline-panel
+              .timeline-heading
+                %h4= t('sections.about.ambition.title')
+              .timeline-body
+                %p.text-muted= t('sections.about.ambition.content')
+          %li.timeline-inverted
+            .timeline-image
+              = image_tag 'about/4.jpg', class: 'img-circle img-responsive'
+            .timeline-panel
+              .timeline-heading
+                %h4= t('sections.about.fact.title')
+              .timeline-body
+                %p.text-muted= t('sections.about.fact.content')

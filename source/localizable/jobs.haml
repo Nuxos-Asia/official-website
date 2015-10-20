@@ -3,8 +3,8 @@
     .row
       .col-lg-12.text-center
         %h2.section-heading
-          %strong JOIN US
-        %h3.section-subheading.text-muted Become part of our team
+          %strong= t('sections.job_page.title')
+        %h3.section-subheading.text-muted= t('sections.job_page.sub_title')
 
 
 %section#job-details
@@ -17,7 +17,7 @@
 
     .row
       .col-sm-8
-        = partial "jobs_description"
+        = partial 'jobs_description'
 
       .col-sm-4
         .sidebar
@@ -33,5 +33,5 @@
 
           .spacer
           %a.btn.btn-primary{:href => "mailto:#{data.site.job_email}"}
-            = "Submit Your Resume "
+            = 'Submit Your Resume '
             %i.fa.fa-file-text-o
