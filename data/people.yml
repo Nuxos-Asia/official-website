@@ -3,9 +3,9 @@ team:
     position: CTO & Rails Developer
     photo: team/richard.jpg
 
-  - name: Earth
-    position: Rails Developer
-    photo: team/earth.jpg
+#  - name: Earth
+#    position: Rails Developer
+#    photo: team/earth.jpg
 
   - name: Korn
     position: IT Marketing
