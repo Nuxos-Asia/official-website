@@ -5,6 +5,10 @@
       .intro-lead-in
       .intro-heading
 
+    .app-store-box
+      .download-button
+        = link_to image_tag("app-store-#{I18n.locale.to_s}.png", width: 140.5, height: 41.5), "https://itunes.apple.com/#{I18n.locale.to_s}/app/huakala-selfie/id1044977126"
+
 
 
 -#= partial 'services'
