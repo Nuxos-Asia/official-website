@@ -31,9 +31,9 @@ team:
     position: Rails Developer
     photo: team/thak.jpg
 
-#  - name: You
-#    title: Join Us
-#    caption: Become part of our team
-#    photo: team/unknow.png
-#    link_url: '/jobs'
+  - name: You
+    title: Join Us
+    caption: Become part of our team
+    photo: team/unknow.png
+    link_url: '/jobs'
 
