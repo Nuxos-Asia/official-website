@@ -1,71 +1,25 @@
 #accordion.panel-group
   .panel.panel-default
     .panel-heading{'data-parent': '#accordion', 'data-target': '#collapseOne', 'data-toggle': 'collapse'}
-      %h4.panel-title
-        %a.accordion-toggle
-          Ruby on Rails Developer
+      %h4.panel-title= t('sections.job_page.jobs.rails_dev.title')
+
     #collapseOne.panel-collapse.collapse.in
       .panel-body
         %dl.dl-horizontal
-          %dt Main experience
+          %dt= t('sections.job_page.jobs.main_experience')
           %dd
             %ul
-              %li At least 1 year of programming experience and willing to learn new things.
-              %li Love coding is an advantage.
-              %li Knowledge of Ruby and/or Rails framework is an advantage.
-              %li Understanding OOP (Object Oriented Programming).
-              %li Enjoy clean code and writing test is required.
-              %li Experienced in HTML, JavaScript/jQuery and CSS.
-              %li Experienced in MySQL/PostgreSQL.
-              %li Good English skill. Just be able to tell us what you're thinking (We have Thai people in our team, don’t worry).
-              %li Be able to work as a team is required.
+              - t('sections.job_page.jobs.rails_dev.main_exp').each do |list|
+                %li= list
           %br
-          %dt Additional
+          %dt= t('sections.job_page.jobs.additional')
           %dd
             %ul
-              %li Experienced in using any version control e.g. Git, Subversion.
-              %li Can show us some of your codes.
-              %li Comfortable to use Mac.
+              - t('sections.job_page.jobs.rails_dev.addition').each do |list|
+                %li= list
           %br
-          %dt Benefits
+          %dt= t('sections.job_page.jobs.benefits')
           %dd
             %ul
-              %li Friendly and fun working environment.
-              %li Free food & Drink.
-              %li Flexible working time.
-              %li Bupa health insurance.
-
-  .panel.panel-default
-    .panel-heading
-      %h4.panel-title{'data-parent': '#accordion', 'data-target': '#collapseTwo', 'data-toggle': 'collapse'}
-        %a.accordion-toggle
-          PHP Developer
-    #collapseTwo.panel-collapse.collapse
-      .panel-body
-        %dl.dl-horizontal
-          %dt Main experience
-          %dd
-            %ul
-              %li At least 2 to 3 years of programming experience and willing to learn new things.
-              %li Knowledge of PhP 5+ is required
-              %li Knowledge of a CMS or CMF is required (Joomla, Wordpress, Drupal)
-              %li Knowledge of a PhP framework is an advantage (Cake Php, Code Igniter, Laravel, Yii, ...)
-              %li Experienced in HTML, JavaScript/jQuery and CSS.
-              %li Good English skill. Just be able to tell us what you're thinking (We have Thai people in our team, don’t worry).
-              %li Be able to work as a team is required.
-          %br
-          %dt Additional
-          %dd
-            %ul
-              %li Knowing Drupal is a BIG advantage
-              %li Experienced in using any version control e.g. Git, Subversion.
-              %li Can show us some of your code or open-source projects.
-              %li Comfortable to use Mac.
-          %br
-          %dt Benefits
-          %dd
-            %ul
-              %li Friendly and fun working environment.
-              %li Free food & Drink.
-              %li Flexible working time.
-              %li Bupa health insurance.
+              - t('sections.job_page.jobs.rails_dev.benefits').each do |list|
+                %li= list
