@@ -21,7 +21,7 @@ en:
         content: We are an SME company, and we love to work in a relaxing environment. Trust, reliability, and responsibility are our teamwork keys.
     team:
       title: Our Amazing Team
-      sub_title: People who made all this possible
+      sub_title: People who made all these things possible
       member:
         - name: Richard
           position: Managing Director
@@ -40,7 +40,7 @@ en:
           photo: team/por.jpg
 
         - name: Priao
-          position: Project Coordinator
+          position: Project Manager
           photo: team/priao.jpg
 
         - name: Safe
