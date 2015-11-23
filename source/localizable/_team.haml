@@ -6,19 +6,19 @@
         %h2.section-heading= t('sections.team.title')
         %h3.section-subheading.text-muted= t('sections.team.sub_title')
 
-    - data.people.team.each_slice(4) do |slice|
+    - t('sections.team.member').each_slice(4) do |slice|
       .row
         - slice.each do |person|
           = content_tag :div, class: "col-md-#{col_for_collection(slice)} col-xs-6" do
             .team-member
               - if person[:name] == 'You'
                 %h4.you= person[:name]
-                = image_tag person.photo, class: "img-circle img-responsive"
+                = image_tag person[:photo], class: "img-circle img-responsive"
                 %h4
                   = link_to person[:title], person[:link_url]
                 %p.text-muted= person[:caption]
               - else
-                = image_tag person.photo, class: "img-circle img-responsive"
+                = image_tag person[:photo], class: "img-circle img-responsive"
                 %h4= person[:name]
                 %p.text-muted= person[:position]
 

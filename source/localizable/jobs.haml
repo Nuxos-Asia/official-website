@@ -16,16 +16,14 @@
       .col-sm-4
         .sidebar
           %h3
-            %strong PASSION
-            is everything
+            %strong= t('sections.job_page.jobs.caption.title')
+            = t('sections.job_page.jobs.caption.sub_title')
 
           .spacer
-          %p
-            Our team seeking people who has passion in software development & design and also problem solver.
-          %p
-            If you think you are person that we looking for. Then, let's talk!
+          - t('sections.job_page.jobs.caption.content').each do |msg|
+            %p= msg
 
           .spacer
           %a.btn.btn-primary{:href => "mailto:#{data.site.job_email}"}
-            = 'Submit Your Resume '
+            = t('sections.job_page.jobs.caption.submit')
             %i.fa.fa-file-text-o

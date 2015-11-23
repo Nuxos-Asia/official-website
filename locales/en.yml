@@ -22,6 +22,40 @@ en:
     team:
       title: Our Amazing Team
       sub_title: People who made all this possible
+      member:
+        - name: Richard
+          position: Managing Director
+          photo: team/richard.jpg
+
+        - name: Korn
+          position: IT Marketing
+          photo: team/korn.jpg
+
+        - name: M
+          position: iOS Senior Developer
+          photo: team/m.jpg
+
+        - name: Por
+          position: Rails Developer
+          photo: team/por.jpg
+
+        - name: Priao
+          position: Project Coordinator
+          photo: team/priao.jpg
+
+        - name: Safe
+          position: Rails Middle Developer
+          photo: team/safe.jpg
+
+        - name: Thak
+          position: Rails Middle Developer
+          photo: team/thak.jpg
+
+        - name: You
+          title: Join Us
+          caption: Become part of our team
+          photo: team/unknow.png
+          link_url: '/jobs'
     contact:
       title: Contact Us
       sub_title: Any questions, please do not hesitate to contact us!
@@ -33,6 +67,7 @@ en:
                  Thailand 10500 <br>
                  <abbr title="Phone">Tel:</abbr> +6685 90 40 939 <br>
                  <abbr title="Email">Email:</abbr> info@nuxos.asia <br><br>
+      send_message: Send message
 
     job_page:
       title: Join us
@@ -42,6 +77,13 @@ en:
         main_experience: Main experience
         additional: Additional
         benefits: Benefits
+        caption:
+          title: PASSION
+          sub_title: is everything
+          content:
+            - Our team is seeking people who has passion in software development and also problem solvers.
+            - If you think you are the person that we are looking for, then, let's contact us!
+          submit: Submit your resume
         rails_dev:
           title: Ruby on Rails Developer
           main_exp:
@@ -49,7 +91,7 @@ en:
             - Love coding is an advantage.
             - Knowledge of Ruby and/or Rails framework is an advantage.
             - Understanding OOP (Object Oriented Programming).
-            - Enjoy clean code and writing test is required.
+            - Enjoy cleaning code and writing test is required.
             - Experienced in HTML, JavaScript/jQuery and CSS.
             - Experienced in MySQL/PostgreSQL.
             - Good English skill. Just be able to tell us what you're thinking (We have Thai people in our team, don’t worry).

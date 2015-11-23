@@ -21,10 +21,44 @@ th:
         content: เราเป็นบริษัทขนาดเล็กที่รักการทำงานภายใต้บรรยากาศสบายๆแบบเป็นกันเอง การเชื่อใจ ความเชื่อถือได้ และความรับผิดชอบเป็นหัวใจหลักของการทำงานของเรา
     team:
       title: ทีม
-      sub_title: ทีมงานของเรา
+      sub_title: ทีมที่ช่วยสร้างสรรค์ให้สิ่งต่างๆเป็นไปได้
+      member:
+        - name: ริชาร์ด
+          position: กรรมการผู้จัดการ
+          photo: team/richard.jpg
+
+        - name: กร
+          position: เจ้าหน้าที่ฝ่ายการตลาด
+          photo: team/korn.jpg
+
+        - name: เอ็ม
+          position: นักพัฒนาอาวุโส iOS
+          photo: team/m.jpg
+
+        - name: ปอ
+          position: นักพัฒนา Rails
+          photo: team/por.jpg
+
+        - name: เปรียว
+          position: ผู้จัดการโปรเจค
+          photo: team/priao.jpg
+
+        - name: เซฟ
+          position: นักพัฒนาระดับกลาง Rails
+          photo: team/safe.jpg
+
+        - name: ทักษ์
+          position: นักพัฒนาระดับกลาง Rails
+          photo: team/thak.jpg
+
+        - name: คุณ
+          title: เข้าร่วมกับเรา
+          caption: มาเป็นส่วนนึงของทีมของเรา
+          photo: team/unknow.png
+          link_url: '/jobs'
     contact:
       title: ติดต่อเรา
-      sub_title: สงสัย กรุณาติดต่อเราได้ที่
+      sub_title: มีคำถามหรือข้อสงสัย กรุณาติดต่อเราได้ที่
       address: >
                  <strong>บริษัทนัคซอส คอนซัลติ้ง จำกัด</strong><br>
                  142/10 ซอยศึกษาวิทยา <br>
@@ -33,6 +67,7 @@ th:
                  ประเทศไทย 10500 <br>
                  <abbr title="Phone">เบอร์โทร:</abbr> +6685 90 40 939 <br>
                  <abbr title="Email">อีเมล์:</abbr> info@nuxos.asia <br><br>
+      send_message: ส่งข้อความ
 
     job_page:
       title: ร่วมงานกับเรา
@@ -41,7 +76,14 @@ th:
       jobs:
         main_experience: ประสบการณ์การทำงาน
         additional: ความสามารถเพิ่มเติม
-        benefits: ผลประโยชน์ที่คุณจะได้รับจากเรา
+        benefits: ผลประโยชน์ที่จะได้รับ
+        caption:
+          title: ความหลงใหล
+          sub_title: เปรียบเสมือนเป็นทุกสิ่งทุกอย่าง
+          content:
+            - ทีมของเรากำลังหาคนที่เต็มไปด้วยความหลงใหลในการพัฒนาซอล์ฟแวร์และผู้ที่รักในการแก้ปัญหาทางด้านไอที
+            - ถ้าคุณคิดว่าคุณเป็นคนๆนั้นที่เรากำลังมองหาอยู่ ติดต่อเราเข้ามาได้เลย
+          submit: ส่งเรซูเม่ของคุณที่นี่
         rails_dev:
           title: นักพัฒนา Ruby on Rails
           main_exp:
